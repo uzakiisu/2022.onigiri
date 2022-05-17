@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+  <title>風雅 ｜お問い合わせ</title>
+</head>
+
+<body>
+  <header>
+    <h1><img src="img/logo2.png" alt="店舗ロゴ"></h1>
+    <div id="hmenu">
+      <img src="img/hmenu.png" alt="メニュー">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="kodawari.html">こだわり</a></li>
+        <li><a href="menu.html">お品書き</a></li>
+        <li><a href="form.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form action="form.php" method="post">
+    <div class="main">
+      <h2>お問い合わせフォーム</h2>
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>会社名
+          </p>
+          <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和" name="kaisya">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎" name="simei">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000" name="tel">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com" name="mail">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea class="Form-Item-Textarea" name="com"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+      </div>
+    </div>
+  </form>
+
+  <footer>
+    <div class="info-list">
+      <h2>風雅　おにぎり専門店</h2>
+      <dl>
+        <dt>営業時間</dt>
+        <dd>8:00-17:00(水曜定休日)</dd>
+        <dt>電話番号</dt>
+        <dd>0120-500-5000</dd>
+        <dt>住所</dt>
+        <dd>神奈川県横浜市神奈川区鶴屋町2丁目17</dd>
+      </dl>
+      <ul>
+        <li><a href="#" title="Twitter"><img src="img/Twitter2.png" alt="Twitter" width="50px"></a></li>
+        <li><a href="#" title="Facebook"><img src="img/facebook2.png" alt="Facebook" width="50px"></a></li>
+        <li><a href="#" title="Instagram"><img src="img/Instagram2.png" alt="Instagram" width="50px"></a></li>
+      </ul>
+      <div class="access">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4580046642523!2d139.62017995056783!3d35.46821034913616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c11ad8b4147%3A0xb557e8447728921e!2z5oOF5aCx56eR5a2m5bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1642379810470!5m2!1sja!2sjp"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <a href="#header" id="page-top">TOPへ</a>
+    <p><small>Copyright　二見紗羅</small>
+    </p>
+  </footer>
+
+</body>
+
+</html>

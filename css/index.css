@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.slider{
+    margin: 100px auto;
+    width: 100%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+.menu {
+  background-color: #ffeeaf;
+  max-width: 100%;
+  height: 400px;
+  margin: 100px 0;
+  position: relative;
+}
+.menu h2{
+  background-color: #ffcc00;
+  text-align: center;
+  padding: 10px 0;
+}
+.img{
+  width: 42%;
+  margin: 20px 0 10px 10px;
+  float: left;
+  border-radius: 30px;
+}
+.comment{
+  background-color: #ffeeaf;
+  width: 50%;
+  font-size: 100%;
+  float: left;
+  margin: 5% auto;
+  padding-left: 3%;
+}
+#bold{
+  font-weight: bold;
+}
+.more{
+  clear: both;
+  background-color: #fffff0;
+  width: 20%;
+  border: 1px solid #555;
+  text-align: center;
+  position: absolute;
+  margin-right: 20px;
+  right: 5%;
+  bottom: 25%;
+}
+.more a{
+  color: #333;
+}
+.more a:hover{
+  opacity: 0.5;
+}
+
+
+.news-list{
+  list-style: none outside;
+  margin: 50px 0;
+  padding: 0;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category{
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category span{
+  background: #999;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #fff;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
+}
+
+/* 装飾 */
+
+
+newlist{
+  margin: 20px;
+}
+.box-link p {
+  font-size: 20px;
+  text-align: center;
+}

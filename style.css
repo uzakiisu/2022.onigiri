@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/*リセットCSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*************************/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffff0;
+  font-family: 'Shippori Antique', sans-serif;
+  font-family: 'Yuji Mai', serif;
+  font-size: 18px;
+}
+
+
+/*************************/
+/*header設定*/
+header {
+  background-color: #ffe;
+  text-align: center;
+  padding-top: 12px;
+  position: relative;
+}
+
+/* ハンバーガーメニューボタン設定 */
+#hmenu {
+  width: 60px;
+  height: 60px;
+  background-color: #ffe;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+header nav {
+  margin-bottom: 20px;
+  background-color: #7d4934;
+  display: none;
+}
+
+header nav ul li a {
+  display: block;
+  color: #d8c2a4;
+  background-color: #7d4934;
+  padding: 12px 0;
+}
+
+header nav ul li a:hover {
+  color: #7d4934;
+  background-color: #d8c2a4;
+}
+
+/*************************/
+.main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+width: 100%;
+  background-color: #d8c2a4;
+  padding: 20px;
+  color: #fff;
+  clear: both;
+  margin: 0 auto;
+}
+
+.info-list {
+  font-size: 120%;
+}
+
+.info-list dl {
+  margin: 20px 0 50px;
+}
+
+.info-list dt {
+  float: left;
+}
+
+.info-list dd {
+  margin-left: 100px;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+#form {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #7d4934;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#form a:hover {
+  opacity: 0.9;
+}
+
+#sns {
+  margin: 30px 0;
+}
+
+#page-top {
+  clear: both;
+  display: block;
+  font-size: 100%;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #7d4934;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+}
+
+#page-top:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* 768px 以上の設定 */
+@media screen and (min-width : 768px) {
+
+  /* 以下に 768px 以上の CSS を記述 */
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    width: 25%;
+    float: left;
+  }
+
+  #hmenu {
+    display: none;
+  }
+}
+
+/****************/
+/* 1024px 以上の設定 */
+@media screen and (min-width : 1024px) {
+
+  /* ここに 1024px 以上の CSS を記述 */
+  html {
+    background-size: auto;
+  }
+
+  nav ul {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/****************/
