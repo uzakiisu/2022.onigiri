@@ -106,7 +106,7 @@
   width: 100%;
 }
 .news-list .item a:hover .title{
-  color: ;
+  color: #00f;
 }
 
 @media screen and (max-width: 767px){
